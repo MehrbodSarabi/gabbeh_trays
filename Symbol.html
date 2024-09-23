@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol: [Symbol Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+        }
+        .symbol-info {
+            text-align: center;
+        }
+        .symbol-info img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .preview-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .preview-item {
+            width: 30%;
+            text-align: center;
+        }
+        .preview-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .preview-item img:hover {
+            transform: scale(1.05);
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .qr-code img {
+            max-width: 150px;
+        }
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .preview-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .description {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[Symbol Name]</h1>
+        
+        <div class="symbol-info">
+            <img src="path-to-your-symbol-image.jpg" alt="[Symbol Name]">
+            <p class="description">[Symbol Description] این نماد بازتاب‌دهنده‌ی ارزش‌ها و باورهای باستانی است که هزاران سال در دل فرهنگ ایرانی حفظ شده است.</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-item" onclick="window.location.href='symbol1.html'">
+                <img src="path-to-other-symbol1.jpg" alt="Symbol 1">
+            </div>
+            <div class="preview-item" onclick="window.location.href='symbol2.html'">
+                <img src="path-to-other-symbol2.jpg" alt="Symbol 2">
+            </div>
+            <div class="preview-item" onclick="window.location.href='symbol3.html'">
+                <img src="path-to-other-symbol3.jpg" alt="Symbol 3">
+            </div>
+        </div>
+
+        <div class="qr-code">
+            <h3>Scan to view more details:</h3>
+            <img src="path-to-qr-code-image.jpg" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
