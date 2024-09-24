@@ -127,6 +127,7 @@ h1 {
         /* transform: translateY(-5px); */
         animation: flip-card 2s;
         animation-fill-mode: forwards;
+        touch-action: pan-x;
     }
     .preview-item {
         width: 30%;
