@@ -52,8 +52,9 @@ h1 {
     text-align: center;
 }
 .symbol-info img {
-    max-width: 100%;
+    max-width: 50%;
     border-radius: 10px;
+    margin: 20px auto;
 }
 .description {
     margin-top: 20px;
