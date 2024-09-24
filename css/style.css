@@ -125,7 +125,7 @@ h1 {
     }
     .grid-item:hover, .grid-item:active, .grid-item:focus {
         /* transform: translateY(-5px); */
-        animation: flip-card 1s;
+        animation: flip-card 2s;
         animation-fill-mode: forwards;
     }
     .preview-item {
