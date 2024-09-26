@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>گَبّه</title>
+    <script>
+        console.log("hello");
+        document.addEventListener('DOMContentLoaded', function() {
+          let flipContainer = document.querySelector('.grid');
+          let pressTimer;
+        
+          flipContainer.addEventListener('touchstart', function(e) {
+            pressTimer = setTimeout(() => {
+              flipContainer.classList.add('flip');
+            }, 500); // 500ms for long press
+          });
+        
+          flipContainer.addEventListener('touchend', function(e) {
+            clearTimeout(pressTimer); // Cancel if the press is less than 500ms
+          });
+        
+          // Optionally, remove the flip on a second long press
+          flipContainer.addEventListener('touchstart', function(e) {
+            if (flipContainer.classList.contains('flip')) {
+              pressTimer = setTimeout(() => {
+                flipContainer.classList.remove('flip');
+              }, 500);
+            }
+          });
+        });
+        console.log("did it ?");
+        </script>
 </head>
 <body>
     <div class="container">
@@ -13,22 +40,22 @@
             <div class="grid-item" onclick="window.location.href='Star.html'">
                 <h3>ستاره</h3>
                 <img src="./assets/img/Star.png" alt="ستاره">
-                <h3 class="flip">Star</h3>
+                <h3 class="flipText">Star</h3>
             </div>
             <div class="grid-item" onclick="window.location.href='ram.html'">
                 <h3>شاخ قوچ</h3>
                 <img src="./assets/img/Ram.png" alt="شاخ قوچ">
-                <h3 class="flip">Ram's Horn</h3>
+                <h3 class="flipText">Ram's Horn</h3>
             </div>
             <div class="grid-item" onclick="window.location.href='wolf.html'">
                 <h3>ردپای گرگ</h3>
                 <img src="./assets/img/Wolf.png" alt="ردپای گرگ">
-                <h3 class="flip">Wolf's Track</h3>
+                <h3 class="flipText">Wolf's Track</h3>
             </div>
             <div class="grid-item" onclick="window.location.href='fertility.html'">
                 <h3>باروری</h3>
                 <img src="./assets/img/Fertility.png" alt="باروری">
-                <h3 class="flip">Fertility</h3>
+                <h3 class="flipText">Fertility</h3>
             </div>
         </div>
     </div>
