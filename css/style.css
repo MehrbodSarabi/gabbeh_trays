@@ -32,12 +32,10 @@ h1 {
 }
 .title{
     display: none;
-    color: white;
-    opacity: 30%;
-    background-color: black;
+    color: black;
     padding: 10px;
     border-radius: 50%;
-    animation: flip-card 2s;
+    animation: flip-card .5s;
     width: fit-content;
     margin: 0 auto;
 }
