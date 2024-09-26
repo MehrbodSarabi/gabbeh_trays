@@ -30,6 +30,14 @@ h1 {
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
 }
+.title{
+    display: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    animation: flip-card 2s;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +110,9 @@ h1 {
 }
 .preview-item img:hover {
     transform: scale(1.05);
+}
+.preview-item:hover .title{
+    display: block;
 }
 .qr-code {
     text-align: center;
