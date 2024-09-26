@@ -34,12 +34,19 @@ h1 {
     display: none;
     color: white;
     opacity: 30%;
-    background-color: lightgrey;
+    background-color: black;
     padding: 10px;
     border-radius: 50%;
     animation: flip-card 2s;
     width: fit-content;
     margin: 0 auto;
+}
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .grid {
     display: flex;
